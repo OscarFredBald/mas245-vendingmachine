@@ -7,15 +7,15 @@
 class Soda
 {
 public:
+    Soda() = delete;
 
     // Declare public visible constructor with three parameters.
-    Soda(std::string name, unsigned int price, unsigned int inventory);
+    Soda(const std::string& name, unsigned int price, unsigned int inventory);
 
-    // Declare public visible variables.
-    std::string name_;
-    unsigned int price_;
-    unsigned int inventory_;
-
+    // Declare public variables.
+    const std::string name_;
+    const unsigned int price_;
+    const unsigned int inventory_;
 };
 
 #endif // SODA_H
